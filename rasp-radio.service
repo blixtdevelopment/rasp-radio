@@ -1,0 +1,17 @@
+[Unit]
+Description=Rasp-Radio, with Google assistant
+After=network.target
+
+[Service]
+ExecStart=/home/pi/env/bin/python3 -u /home/pi/google_assistant_radio.py
+WorkingDirectory=/home/pi/
+StandardOutput=journal
+StandardError=journal
+Restart=always
+RestartSec=2
+StartLimitIntervalSec=0
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+Alias=google-assistant.service

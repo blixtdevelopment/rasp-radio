@@ -1,0 +1,4 @@
+[DEFAULT]
+DEVICE_MODEL_ID = your-device-id
+USE_GOOGLE_ASSISTANT = yes/no
+
